@@ -1,9 +1,9 @@
-import { Slug } from "./assets";
+import { ISystemFields, Slug } from "./assets";
 import { IChallenge } from "./challenge";
 import { ITeacher } from "./teacher";
 
-export interface ILesson {
-	tile: string,
+export interface ILesson extends ISystemFields {
+	title: string,
 	slug?: Slug,
 	description?: string,
 	videoId: string,
